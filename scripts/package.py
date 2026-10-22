@@ -11,7 +11,8 @@ import zipfile
 from font_assets import write_widget_archive
 
 ROOT = Path(__file__).resolve().parents[1]
-SDK = ROOT / '.local/tizen-sdk'
+# TIZEN_SDK points at an existing Tizen Studio install; its own sdk.info is left alone.
+SDK = Path(os.environ.get('TIZEN_SDK', ROOT / '.local/tizen-sdk')).expanduser()
 PRIVATE = ROOT / '.local/certificates/private'
 CLI = SDK / 'tools/ide/bin/tizen'
 password_file = PRIVATE / 'certificate-password.txt'
@@ -22,9 +23,10 @@ if not password:
     raise SystemExit('Signing password is empty.')
 dist = ROOT / 'dist'
 dist.mkdir(exist_ok=True)
-data = SDK / 'data'
-data.mkdir(exist_ok=True)
-(SDK / 'sdk.info').write_text('TIZEN_SDK_INSTALLED_PATH=' + str(SDK) + '\nTIZEN_SDK_DATA_PATH=' + str(data) + '\nJDK_PATH=' + str(SDK / 'jdk') + '\n')
+if 'TIZEN_SDK' not in os.environ:
+    data = SDK / 'data'
+    data.mkdir(exist_ok=True)
+    (SDK / 'sdk.info').write_text('TIZEN_SDK_INSTALLED_PATH=' + str(SDK) + '\nTIZEN_SDK_DATA_PATH=' + str(data) + '\nJDK_PATH=' + str(SDK / 'jdk') + '\n')
 profile = PRIVATE / 'profiles.xml'
 tree = XML.parse(profile)
 for item in tree.getroot().iter('profileitem'):
@@ -42,7 +44,7 @@ unsigned = dist / 'CleanFrame-unsigned.wgt'
 write_widget_archive(unsigned)
 signed_dir = dist / 'signed'
 signed_dir.mkdir(exist_ok=True)
-command = [str(CLI), 'package', '-t', 'wgt', '-s', 'FrameHome', '-o', str(signed_dir), '--', str(unsigned)]
+command = [str(CLI), 'package', '-t', 'wgt', '-s', tree.getroot().get('active', 'FrameHome'), '-o', str(signed_dir), '--', str(unsigned)]
 pid, terminal = pty.fork()
 if pid == 0:
     os.execv(command[0], command)

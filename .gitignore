@@ -27,3 +27,14 @@ PP*.woff2
 /explorations/
 /docs/research/
 /docs/articles/
+
+# Trademarked brand marks — personal build only, not for public redistribution
+/app/assets/icons/jiostar.svg
+/app/assets/icons/sonyliv.png
+/app/assets/icons/zee5.svg
+
+# .NET build output for the native-home helper
+/scripts/native-home/obj/
+
+# pnpm lockfile (repo's canonical lockfile is package-lock.json)
+pnpm-lock.yaml

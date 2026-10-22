@@ -16,5 +16,23 @@
     "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/tubi.svg",
     "licence": "CC0-1.0",
     "note": "Shape unchanged; white fill for launcher."
+  },
+  {
+    "icon": "internet",
+    "source": "CleanFrame original utility outline, 24px grid / 1.6px stroke",
+    "licence": "CleanFrame original",
+    "note": "Generic globe for the Samsung Internet browser; no brand mark."
+  },
+  {
+    "icon": "jiostar",
+    "source": "Owner-supplied JioHotstar logo (brandfetch.com/jiostar.com)",
+    "licence": "Trademark of its owner; personal build only, not for public redistribution",
+    "note": "Flattened to a single white fill; styles/gradients removed."
+  },
+  {
+    "icon": "zee5",
+    "source": "Owner-supplied ZEE5 logo (brandfetch.com/zee5.com)",
+    "licence": "Trademark of its owner; personal build only, not for public redistribution",
+    "note": "Flattened to a single white fill; styles/gradients removed."
   }
 ]
