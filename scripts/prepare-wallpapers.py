@@ -29,8 +29,23 @@ PHOTOS = [
     ('amber', 'Amber hills', 'chris-barbalis-vazZtmYFgFY-unsplash.jpg', 'Chris Barbalis', 'vazZtmYFgFY', 'light'),
     ('mint', 'Mint wave', 'magicpattern-87PP9Zd7MNo-unsplash.jpg', 'MagicPattern', '87PP9Zd7MNo', 'light'),
     ('alpine', 'Alpine glow', 'cristina-gottardi-CSpjU6hYo_0-unsplash.jpg', 'Cristina Gottardi', 'CSpjU6hYo_0', 'light'),
+    # Unsplash candidates from scripts/fetch-unsplash.mjs keep their photo-ID filenames.
+    ('pinemist', 'Pine mist', '379eC1vAJZA.jpg', 'Rasmus Gundorff Sæderup', '379eC1vAJZA', 'light'),
+    ('dawnpass', 'Dawn pass', '7OGWqEf5u88.jpg', 'Inés Álvarez Fdez', '7OGWqEf5u88', 'light'),
+    ('slate', 'Slate ranges', '9CfajiGQL0o.jpg', 'Fabrizio Conti', '9CfajiGQL0o', 'dark'),
+    ('cloudpeak', 'Cloud peaks', '9S1CdLRIO8M.jpg', 'Andrew Svk', '9S1CdLRIO8M', 'light'),
+    ('snowpeak', 'Snow peak', 'CDf_nPmRt3M.jpg', 'Jarden Bellamkonda', 'CDf_nPmRt3M', 'light'),
+    ('bluehaze', 'Blue haze', 'PdGBci-4jR8.jpg', 'Alessio Soggetti', 'PdGBci-4jR8', 'light'),
+    ('paleridge', 'Pale ranges', 'gdE-5Oui1Y0.jpg', 'Alessio Soggetti', 'gdE-5Oui1Y0', 'light'),
+    ('glacier', 'Glacier dawn', 'jQAe44MEIXU.jpg', 'Fabian Bächli', 'jQAe44MEIXU', 'light'),
+    ('lakefog', 'Lake fog', 'jWD3o-Ht8ZA.jpg', 'Sergey Pesterev', 'jWD3o-Ht8ZA', 'light'),
+    ('dunes', 'Dark dunes', 'nd4n2erp0hU.jpg', 'mokhalad musavi', 'nd4n2erp0hU', 'dark'),
+    ('cloudsea', 'Cloud sea', 'oJxoDn1NfZQ.jpg', 'martin bennie', 'oJxoDn1NfZQ', 'light'),
+    ('opensea', 'Open sea', 'sZS44fmLIAQ.jpg', 'Rob Dean', 'sZS44fmLIAQ', 'dark'),
+    ('tealvalley', 'Teal valley', 'zxcBR3zNc7I.jpg', 'Alessio Soggetti', 'zxcBR3zNc7I', 'light'),
 ]
-COVER_IDS = {'summit', 'goldcoast', 'sydney', 'amber', 'mint', 'alpine'}
+COVER_IDS = {'summit', 'goldcoast', 'sydney', 'amber', 'mint', 'alpine',
+             'pinemist', 'dawnpass', 'slate', 'cloudpeak', 'snowpeak', 'bluehaze', 'paleridge', 'glacier', 'lakefog', 'dunes', 'cloudsea', 'opensea', 'tealvalley'}
 
 
 def file_hash(path):
@@ -67,7 +82,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('source', type=Path,
                         help='Folder containing the selected original Unsplash filenames')
-    parser.add_argument('--ids', help='Comma-separated wallpaper IDs; default: all 15')
+    parser.add_argument('--ids', help='Comma-separated wallpaper IDs; default: all')
     args = parser.parse_args()
     requested = None if args.ids is None else {id.strip() for id in args.ids.split(',')}
     known = {photo[0] for photo in PHOTOS}

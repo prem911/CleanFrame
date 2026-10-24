@@ -226,5 +226,200 @@ window.CleanFrameWallpapers = [
     "listColumn": 0,
     "dockQuiet": false,
     "clockMist": false
+  },
+  {
+    "id": "pinemist",
+    "name": "Pine mist",
+    "src": "assets/wallpapers/pinemist.jpg",
+    "thumb": "assets/wallpapers/pinemist-thumb.jpg",
+    "tone": "light",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.3,
+    "listColumn": 3,
+    "dockQuiet": false,
+    "clockMist": true
+  },
+  {
+    "id": "dawnpass",
+    "name": "Dawn pass",
+    "src": "assets/wallpapers/dawnpass.jpg",
+    "thumb": "assets/wallpapers/dawnpass-thumb.jpg",
+    "tone": "light",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.12,
+    "listColumn": 3,
+    "dockQuiet": false,
+    "clockMist": false
+  },
+  {
+    "id": "slate",
+    "name": "Slate ranges",
+    "src": "assets/wallpapers/slate.jpg",
+    "thumb": "assets/wallpapers/slate-thumb.jpg",
+    "tone": "dark",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.12,
+    "listColumn": 0,
+    "dockQuiet": false,
+    "clockMist": false
+  },
+  {
+    "id": "cloudpeak",
+    "name": "Cloud peaks",
+    "src": "assets/wallpapers/cloudpeak.jpg",
+    "thumb": "assets/wallpapers/cloudpeak-thumb.jpg",
+    "tone": "light",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.44,
+    "listColumn": 3,
+    "dockQuiet": false,
+    "clockMist": true
+  },
+  {
+    "id": "snowpeak",
+    "name": "Snow peak",
+    "src": "assets/wallpapers/snowpeak.jpg",
+    "thumb": "assets/wallpapers/snowpeak-thumb.jpg",
+    "tone": "light",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.2,
+    "listColumn": 0,
+    "dockQuiet": false,
+    "clockMist": true
+  },
+  {
+    "id": "bluehaze",
+    "name": "Blue haze",
+    "src": "assets/wallpapers/bluehaze.jpg",
+    "thumb": "assets/wallpapers/bluehaze-thumb.jpg",
+    "tone": "light",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.2,
+    "listColumn": 0,
+    "dockQuiet": false,
+    "clockMist": true
+  },
+  {
+    "id": "paleridge",
+    "name": "Pale ranges",
+    "src": "assets/wallpapers/paleridge.jpg",
+    "thumb": "assets/wallpapers/paleridge-thumb.jpg",
+    "tone": "light",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.44,
+    "listColumn": 3,
+    "dockQuiet": false,
+    "clockMist": true
+  },
+  {
+    "id": "glacier",
+    "name": "Glacier dawn",
+    "src": "assets/wallpapers/glacier.jpg",
+    "thumb": "assets/wallpapers/glacier-thumb.jpg",
+    "tone": "light",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.2,
+    "listColumn": 4,
+    "dockQuiet": false,
+    "clockMist": true
+  },
+  {
+    "id": "lakefog",
+    "name": "Lake fog",
+    "src": "assets/wallpapers/lakefog.jpg",
+    "thumb": "assets/wallpapers/lakefog-thumb.jpg",
+    "tone": "light",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.44,
+    "listColumn": 3,
+    "dockQuiet": false,
+    "clockMist": true
+  },
+  {
+    "id": "dunes",
+    "name": "Dark dunes",
+    "src": "assets/wallpapers/dunes.jpg",
+    "thumb": "assets/wallpapers/dunes-thumb.jpg",
+    "tone": "dark",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.12,
+    "listColumn": 0,
+    "dockQuiet": false,
+    "clockMist": false
+  },
+  {
+    "id": "cloudsea",
+    "name": "Cloud sea",
+    "src": "assets/wallpapers/cloudsea.jpg",
+    "thumb": "assets/wallpapers/cloudsea-thumb.jpg",
+    "tone": "light",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.44,
+    "listColumn": 3,
+    "dockQuiet": false,
+    "clockMist": true
+  },
+  {
+    "id": "opensea",
+    "name": "Open sea",
+    "src": "assets/wallpapers/opensea.jpg",
+    "thumb": "assets/wallpapers/opensea-thumb.jpg",
+    "tone": "dark",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.12,
+    "listColumn": 0,
+    "dockQuiet": false,
+    "clockMist": false
+  },
+  {
+    "id": "tealvalley",
+    "name": "Teal valley",
+    "src": "assets/wallpapers/tealvalley.jpg",
+    "thumb": "assets/wallpapers/tealvalley-thumb.jpg",
+    "tone": "light",
+    "ut": {
+      "tr": "mist",
+      "br": "light"
+    },
+    "frostVeil": 0.36,
+    "listColumn": 4,
+    "dockQuiet": false,
+    "clockMist": true
   }
 ];

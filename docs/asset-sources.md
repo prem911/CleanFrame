@@ -20,6 +20,24 @@ Reviewed on 20 October 2026. Each of the fifteen linked Unsplash photo pages dis
 | Mint wave | MagicPattern | [Photo page](https://unsplash.com/photos/87PP9Zd7MNo) |
 | Alpine glow | Cristina Gottardi | [Photo page](https://unsplash.com/photos/CSpjU6hYo_0) |
 
+Added on 24 October 2026 through the Unsplash API with `scripts/fetch-unsplash.mjs`. Authors come from the API (Open sea from its photo page). These thirteen photo pages have not yet had the licence review above; check each before a public release.
+
+| Wallpaper | Photographer | Source |
+| --- | --- | --- |
+| Pine mist | Rasmus Gundorff Sæderup | [Photo page](https://unsplash.com/photos/379eC1vAJZA) |
+| Dawn pass | Inés Álvarez Fdez | [Photo page](https://unsplash.com/photos/7OGWqEf5u88) |
+| Slate ranges | Fabrizio Conti | [Photo page](https://unsplash.com/photos/9CfajiGQL0o) |
+| Cloud peaks | Andrew Svk | [Photo page](https://unsplash.com/photos/9S1CdLRIO8M) |
+| Snow peak | Jarden Bellamkonda | [Photo page](https://unsplash.com/photos/CDf_nPmRt3M) |
+| Blue haze | Alessio Soggetti | [Photo page](https://unsplash.com/photos/PdGBci-4jR8) |
+| Pale ranges | Alessio Soggetti | [Photo page](https://unsplash.com/photos/gdE-5Oui1Y0) |
+| Glacier dawn | Fabian Bächli | [Photo page](https://unsplash.com/photos/jQAe44MEIXU) |
+| Lake fog | Sergey Pesterev | [Photo page](https://unsplash.com/photos/jWD3o-Ht8ZA) |
+| Dark dunes | mokhalad musavi | [Photo page](https://unsplash.com/photos/nd4n2erp0hU) |
+| Cloud sea | martin bennie | [Photo page](https://unsplash.com/photos/oJxoDn1NfZQ) |
+| Open sea | Rob Dean | [Photo page](https://unsplash.com/photos/sZS44fmLIAQ) |
+| Teal valley | Alessio Soggetti | [Photo page](https://unsplash.com/photos/zxcBR3zNc7I) |
+
 The background preparation and material rendering steps are described in [asset generation](assets.md). Full-size original photos and research studies are outside the public source.
 
 ## Fonts and icons

@@ -148,5 +148,135 @@
     "tone": "light",
     "credit": "Cristina Gottardi",
     "source": "https://unsplash.com/photos/CSpjU6hYo_0"
+  },
+  {
+    "id": "pinemist",
+    "name": "Pine mist",
+    "src": "assets/wallpapers/pinemist.jpg",
+    "thumb": "assets/wallpapers/pinemist-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "light",
+    "credit": "Rasmus Gundorff Sæderup",
+    "source": "https://unsplash.com/photos/379eC1vAJZA"
+  },
+  {
+    "id": "dawnpass",
+    "name": "Dawn pass",
+    "src": "assets/wallpapers/dawnpass.jpg",
+    "thumb": "assets/wallpapers/dawnpass-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "light",
+    "credit": "Inés Álvarez Fdez",
+    "source": "https://unsplash.com/photos/7OGWqEf5u88"
+  },
+  {
+    "id": "slate",
+    "name": "Slate ranges",
+    "src": "assets/wallpapers/slate.jpg",
+    "thumb": "assets/wallpapers/slate-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "dark",
+    "credit": "Fabrizio Conti",
+    "source": "https://unsplash.com/photos/9CfajiGQL0o"
+  },
+  {
+    "id": "cloudpeak",
+    "name": "Cloud peaks",
+    "src": "assets/wallpapers/cloudpeak.jpg",
+    "thumb": "assets/wallpapers/cloudpeak-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "light",
+    "credit": "Andrew Svk",
+    "source": "https://unsplash.com/photos/9S1CdLRIO8M"
+  },
+  {
+    "id": "snowpeak",
+    "name": "Snow peak",
+    "src": "assets/wallpapers/snowpeak.jpg",
+    "thumb": "assets/wallpapers/snowpeak-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "light",
+    "credit": "Jarden Bellamkonda",
+    "source": "https://unsplash.com/photos/CDf_nPmRt3M"
+  },
+  {
+    "id": "bluehaze",
+    "name": "Blue haze",
+    "src": "assets/wallpapers/bluehaze.jpg",
+    "thumb": "assets/wallpapers/bluehaze-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "light",
+    "credit": "Alessio Soggetti",
+    "source": "https://unsplash.com/photos/PdGBci-4jR8"
+  },
+  {
+    "id": "paleridge",
+    "name": "Pale ranges",
+    "src": "assets/wallpapers/paleridge.jpg",
+    "thumb": "assets/wallpapers/paleridge-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "light",
+    "credit": "Alessio Soggetti",
+    "source": "https://unsplash.com/photos/gdE-5Oui1Y0"
+  },
+  {
+    "id": "glacier",
+    "name": "Glacier dawn",
+    "src": "assets/wallpapers/glacier.jpg",
+    "thumb": "assets/wallpapers/glacier-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "light",
+    "credit": "Fabian Bächli",
+    "source": "https://unsplash.com/photos/jQAe44MEIXU"
+  },
+  {
+    "id": "lakefog",
+    "name": "Lake fog",
+    "src": "assets/wallpapers/lakefog.jpg",
+    "thumb": "assets/wallpapers/lakefog-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "light",
+    "credit": "Sergey Pesterev",
+    "source": "https://unsplash.com/photos/jWD3o-Ht8ZA"
+  },
+  {
+    "id": "dunes",
+    "name": "Dark dunes",
+    "src": "assets/wallpapers/dunes.jpg",
+    "thumb": "assets/wallpapers/dunes-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "dark",
+    "credit": "mokhalad musavi",
+    "source": "https://unsplash.com/photos/nd4n2erp0hU"
+  },
+  {
+    "id": "cloudsea",
+    "name": "Cloud sea",
+    "src": "assets/wallpapers/cloudsea.jpg",
+    "thumb": "assets/wallpapers/cloudsea-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "light",
+    "credit": "martin bennie",
+    "source": "https://unsplash.com/photos/oJxoDn1NfZQ"
+  },
+  {
+    "id": "opensea",
+    "name": "Open sea",
+    "src": "assets/wallpapers/opensea.jpg",
+    "thumb": "assets/wallpapers/opensea-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "dark",
+    "credit": "Rob Dean",
+    "source": "https://unsplash.com/photos/sZS44fmLIAQ"
+  },
+  {
+    "id": "tealvalley",
+    "name": "Teal valley",
+    "src": "assets/wallpapers/tealvalley.jpg",
+    "thumb": "assets/wallpapers/tealvalley-thumb.jpg",
+    "pos": "50% 50%",
+    "tone": "light",
+    "credit": "Alessio Soggetti",
+    "source": "https://unsplash.com/photos/zxcBR3zNc7I"
   }
 ]
