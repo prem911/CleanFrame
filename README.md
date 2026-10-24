@@ -15,7 +15,7 @@ I highly recommend forking it and building on top of it, ideally with a coding a
 You need Node.js 22+ and Python 3.10+ to run the browser preview.
 
 ```sh
-git clone https://github.com/nthnclrk/CleanFrame.git
+git clone https://github.com/prem911/CleanFrame.git
 cd CleanFrame
 npm ci
 npm run dev:public
@@ -28,12 +28,26 @@ The public preview uses the included Manrope, Geist and Newsreader fonts.
 ## What you can change
 
 - Choose a List or Dock layout, with icons, names or both.
-- Use a photograph, light or dark background, with a simple 12-hour clock.
+- Use a photograph, light or dark background, with a 12- or 24-hour clock.
+- Hide the focused app's name in Icons display; the Dock drops lower to fill the space.
+- Fade the Home controls after a period without a key press (Off, 10 s, 20 s, 30 s or 1 min).
 - Adjust typography, focus and glass materials through the same Settings interface.
 - Choose and reorder Home apps; discover installed apps on the TV.
 - Select from twenty-eight wallpapers and save your preferences locally.
 
 The glass and blur are rendered ahead of time. The TV loads the finished images and uses transforms and opacity for focus feedback.
+
+## Changes in this fork
+
+This fork of [nthnclrk/CleanFrame](https://github.com/nthnclrk/CleanFrame) adds, since 0.6.1:
+
+- **Own installation identity.** A separate Samsung package/application ID and certificates, so it installs independently of the original. Native Home helper guards target this TV's model and app ID.
+- **External Tizen Studio.** `scripts/package.py`, `scripts/tv.py` and `scripts/native-home/` honour `TIZEN_SDK`.
+- **Internet app icon.** A WWW globe mark, plus a mechanism for bundled colour icons. Trademarked streaming logos stay local-only and gitignored.
+- **12/24-hour clock.** Settings → Layout → Clock.
+- **Hide focused app name.** Settings → Focus → Name on focus: Show or Hide (Icons app display only). With it hidden, the Dock moves down to match the top margin.
+- **Thirteen Unsplash wallpapers**, with pre-baked glass materials and panel backdrops, fetched by `scripts/fetch-unsplash.mjs` (API key in `.local/unsplash.json`). Their licences still need the manual review in [asset sources](docs/asset-sources.md) before a public release.
+- **Fade when idle.** Settings → Background → Fade when idle: Off, 10 s, 20 s (default), 30 s or 1 min. Controls, names and glass fade over 1.5 s; the clock and selected app stay clearer. The first key press only wakes Home. Panels and Settings never fade.
 
 ## Use a coding agent
 
