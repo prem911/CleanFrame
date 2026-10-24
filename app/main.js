@@ -1157,12 +1157,14 @@
     appFocusName.className = 'app-focus-name is-on';
   }
 
-  function dockGeom(n) {
-    var m = DOCK_MODES[S.c.apps], vis = Math.max(1, Math.min(5, n)), shelfW = vis * m.pitch - 8, w = shelfW + 32;
+  /* The dock normally ends at 908 to leave room for the focused name or arrange action below it.
+     With both hidden it drops to 1008, mirroring the 72px top margin of the clock and controls. */
+  function dockGeom(n, flush) {
+    var m = DOCK_MODES[S.c.apps], vis = Math.max(1, Math.min(5, n)), shelfW = vis * m.pitch - 8, w = shelfW + 32, bottom = flush ? 1008 : 908;
     var broad = S.geom === 'broad' && n > 5;
     if (n < 0) { w = 912; shelfW = 880; }
     else if (broad) { w = 1728; shelfW = 1696; }
-    return { x: Math.round((1920 - w) / 2), y: 908 - m.th - 32, h: m.th + 32, w: w, shelf: shelfW, vis: vis, broad: broad, empty: n < 0, tw: m.tw, th: m.th, pitch: m.pitch };
+    return { x: Math.round((1920 - w) / 2), y: bottom - m.th - 32, h: m.th + 32, w: w, shelf: shelfW, vis: vis, broad: broad, empty: n < 0, tw: m.tw, th: m.th, pitch: m.pitch };
   }
   /* Five centred: the window moves one tile when focus passes an edge. Broad: keep a
      148px glimpse of the neighbour, as the current dock does. */
@@ -1209,7 +1211,8 @@
   }
 
   function renderDock(hs) {
-    var items = hs.items, n = items.length, empty = hs.mode !== 'arrange' && !n, g = dockGeom(empty ? -1 : n);
+    var items = hs.items, n = items.length, empty = hs.mode !== 'arrange' && !n;
+    var g = dockGeom(empty ? -1 : n, S.c.apps === 'icons' && S.c.focusname === 'hide' && hs.mode !== 'arrange');
     var anchor = clamp(hs.i, 0, Math.max(0, n - 1)), off = empty ? 0 : dockOffset(n, anchor, g);
     var full = hs.arr ? live(hs.arr.slots).length >= CAP : false, ns = hs.arr ? hs.arr.slots.length : n;
     var tileFocus = hs.zone === 'apps' || hs.zone === 'tiles', tileSel = hs.zone === 'util' || hs.zone === 'act' || hs.zone === 'ctl' || hs.zone === 'preview';
