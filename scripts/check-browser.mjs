@@ -815,6 +815,17 @@ try {
     await current.keyboard.up('Escape'); await current.keyboard.press('Escape');
     check('Released Back reaches Home', (await call('where')).view === 'home');
   });
+  await run('Idle fade wakes without acting', async () => {
+    await page(); await look({ idle: '10', layout: 'dock' }); await scene('home');
+    await current.keyboard.press('ArrowRight'); const focus = (await state()).focusAction;
+    await current.waitForFunction(() => document.getElementById('stage').classList.contains('is-idle'), null, { timeout: 12000 });
+    await current.keyboard.press('ArrowRight');
+    check('First press after idle only wakes Home', (await state()).focusAction === focus && !(await current.evaluate(() => document.getElementById('stage').classList.contains('is-idle'))));
+    await current.keyboard.press('ArrowRight');
+    check('Next press navigates normally', (await state()).focusAction !== focus);
+    await look({ idle: 'off' }); await current.keyboard.press('ArrowLeft'); await current.waitForTimeout(10500);
+    check('Off never fades', !(await current.evaluate(() => document.getElementById('stage').classList.contains('is-idle'))) && (await stored()).look.idle === 'off');
+  });
   await run('Rotation pauses and warm return', async () => {
     await page({ minuteMs: 120 });
     await group('background'); await act('background.rotation'); await act('rotation.5'); await scene('home');

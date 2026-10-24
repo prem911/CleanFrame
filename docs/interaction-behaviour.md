@@ -16,7 +16,7 @@ Settings opens a grouped overview: Background, Layout, Typography, Focus, Apps o
 
 | Group | Choices |
 | --- | --- |
-| Background | Photo, Light, Dark; Wallpaper and Rotation when Photo is active |
+| Background | Photo, Light, Dark; Wallpaper and Rotation when Photo is active; Fade when idle |
 | Layout | List or Dock; independent Text, Icons or Both choices for apps and Home controls; 12- or 24-hour clock |
 | Typography | Manrope, Neue Montreal, Mori, Pangram Sans, Geist and Newsreader, when available |
 | Focus | Type or Glass; Soft, Frost or Clear tint material; focused app name shown or hidden (Icons only) |
@@ -69,6 +69,8 @@ The launcher stores appearance, Home order, recently removed apps, the last laun
 The gallery contains 28 bundled wallpapers. Settings → Background → Wallpaper keeps the two-pane Settings frame. Up/Down browses a vertical thumbnail list without wrapping; the right-hand Home preview shows the candidate while the surrounding Settings backdrop stays on the applied photo. OK applies the focused photo and stays in Wallpaper. The tick marks the applied photo and preview status distinguishes unsaved browsing. Back restores the latest applied photo, cancels pending loading and returns to Background’s Wallpaper row. Photo and material assets change as one complete bundle; a failed load restores the applied preview and offers retry. Preview loading waits briefly for remote focus to settle. OK during loading queues application for that photo; another browse move or Back cancels it. Browsing never saves, and repeated OK on the applied photo does not write again.
 
 Settings → Background → Rotation offers Fixed, Each time Home opens, Every 5 minutes, Every 15 minutes and Every hour. Each time Home opens advances once when the launcher loads; a return to the already-running launcher does not advance it. Timed rotation counts only visible Photo Home time in either List or Dock. Panels, flat backgrounds and time spent in other apps pause the cycle. Changing the photo or rotation mode starts a new interval.
+
+Settings → Background → Fade when idle offers Off, 10 s, 20 s (default), 30 s and 1 min. After that long without a key press on Home, the controls, app names and glass fade (the photo's legibility scrims stay, so its brightness does not change) over 1.5 s by opacity only; the clock and the selected app stay clearer. The first key press afterwards only wakes Home (0.2 s) and performs no action, so OK cannot launch an app that was hard to see. Panels, Settings and the editor never fade, and a return to the launcher starts awake.
 
 Launcher wallpaper is separate from native Art Mode. Runtime photos, materials and available fonts are local assets; they do not require the Mac or a network download.
 

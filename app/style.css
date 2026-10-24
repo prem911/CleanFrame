@@ -598,3 +598,13 @@ html,body{width:100%;height:100%;overflow:hidden;background:#000}
 .is-font-switch .home .ph-name,.is-font-switch .home .clock,.is-font-switch .home .tile .label,.is-font-switch .home .u-label,.is-font-switch .home .app-focus-name,.is-font-switch .home .util-focus-label{animation:font-in 160ms linear}
 @keyframes font-in{from{opacity:0}}
 @media(prefers-reduced-motion:reduce){.is-font-switch .home .ph-name,.is-font-switch .home .clock,.is-font-switch .home .tile .label,.is-font-switch .home .u-label,.is-font-switch .home .app-focus-name,.is-font-switch .home .util-focus-label{animation-duration:120ms}}
+/* Idle fade: Home controls recede; legibility scrims stay so photo brightness is unchanged; the clock and selected app stay clearer. Opacity only: slow out, quick back. */
+.caption,.utils,.dock,.ph-scene,.ut-lens>*{transition:opacity 200ms linear}
+.tile,.ph-row{transition:transform var(--t) var(--ease),opacity 200ms linear}
+.is-idle .caption,.is-idle .utils,.is-idle .dock,.is-idle .ph-scene,.is-idle .ut-lens>*{transition:opacity 1.5s ease-in-out}
+.is-idle .tile,.is-idle .ph-row{transition:transform var(--t) var(--ease),opacity 1.5s ease-in-out}
+.is-idle .caption{opacity:.75}
+.is-idle .utils{opacity:.25}
+.is-idle .ut-lens>*{opacity:.3}
+.is-idle .dock,.is-idle .ph-scene{opacity:.7}
+.is-idle .tile:not(.is-focus):not(.is-sel):not(.is-outside-icon),.is-idle .ph-row:not(.is-focus):not(.is-sel){opacity:.4}
