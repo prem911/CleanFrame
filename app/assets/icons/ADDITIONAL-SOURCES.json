@@ -19,9 +19,9 @@
   },
   {
     "icon": "internet",
-    "source": "CleanFrame original utility outline, 24px grid / 1.6px stroke",
-    "licence": "CleanFrame original",
-    "note": "Generic globe for the Samsung Internet browser; no brand mark."
+    "source": "Owner-supplied browser.svg (WWW globe)",
+    "licence": "Free to share (owner-confirmed)",
+    "note": "Colour fills removed and flattened to a single white fill for the launcher mask."
   },
   {
     "icon": "jiostar",
